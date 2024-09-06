@@ -16,7 +16,7 @@ const Page = () => {
 
       {/* Rest of your page content */}
       <h1>Library</h1>
-      <p>Welcome to library</p>
+      <p>Please Welcome</p>
     </div>
   );
 };
