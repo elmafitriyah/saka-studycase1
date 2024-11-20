@@ -1,22 +1,25 @@
 import React from 'react';
-import Breadcrumb from '../components/Breadcrumb'; // Adjust the path if the Breadcrumb component is in a different folder
+import Breadcrumb from '../components/breadcrumbs/Breadcrumb'; // Adjust the path if needed
+import Toasts from '../components/toasts/Toast'
+import Modal from '../components/modals/Modal';
+import Toast from '../components/toasts/Toast';
 
 const Page = () => {
-  // Define breadcrumb items
   const breadcrumbItems = [
     { href: '/', label: 'Home' },
-    { href: '/library', label: 'Library' },
-    { href: '/data', label: 'Data' },
+    { href: '/library', label: 'Product' },
+    { label: 'T-Shirt' }
   ];
 
   return (
     <div>
-      {/* Include the Breadcrumb component and pass the items as a prop */}
-      <Breadcrumb items={breadcrumbItems} size="medium" custom={true} type="medium" />
+      <Breadcrumb items={breadcrumbItems} />
 
       {/* Rest of your page content */}
       <h1>Library</h1>
       <p>Please Welcome</p>
+      <Modal isOpen={undefined} onClose={undefined} title={undefined} children={undefined}></Modal>
+      <Toast type={undefined} title={undefined} message={undefined} timeAgo={undefined} size={undefined}></Toast>
     </div>
   );
 };

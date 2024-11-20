@@ -1,5 +1,5 @@
 import React from 'react';
-import Breadcrumb from './Breadcrumb';
+import Breadcrumb from '../Breadcrumb';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 export default {
